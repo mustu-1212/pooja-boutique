@@ -5,19 +5,19 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(0, 0%, 100%);
+  --background: hsl(45, 40%, 96%);
   --foreground: hsl(0, 0%, 17%);
-  --muted: hsl(0, 0%, 96%);
+  --muted: hsl(45, 30%, 92%);
   --muted-foreground: hsl(0, 0%, 45%);
   --popover: hsl(0, 0%, 100%);
   --popover-foreground: hsl(0, 0%, 17%);
   --card: hsl(0, 0%, 100%);
   --card-foreground: hsl(0, 0%, 17%);
-  --border: hsl(0, 0%, 89%);
-  --input: hsl(0, 0%, 89%);
+  --border: hsl(45, 20%, 89%);
+  --input: hsl(45, 20%, 89%);
   --primary: hsl(45, 88%, 55%);
   --primary-foreground: hsl(0, 0%, 98%);
-  --secondary: hsl(45, 88%, 95%);
+  --secondary: hsl(45, 60%, 92%);
   --secondary-foreground: hsl(0, 0%, 9%);
   --accent: hsl(45, 88%, 85%);
   --accent-foreground: hsl(0, 0%, 9%);
@@ -28,10 +28,10 @@
   
   /* Custom boutique colors */
   --boutique-primary: hsl(45, 88%, 55%);
-  --boutique-secondary: hsl(45, 88%, 95%);
+  --boutique-secondary: hsl(45, 60%, 92%);
   --boutique-accent: hsl(45, 88%, 85%);
   --boutique-dark: hsl(0, 0%, 17%);
-  --boutique-light: hsl(45, 20%, 98%);
+  --boutique-light: hsl(45, 40%, 96%);
   --boutique-whatsapp: hsl(142, 70%, 49%);
 }
 

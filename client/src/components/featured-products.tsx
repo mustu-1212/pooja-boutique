@@ -57,7 +57,7 @@ const featuredProducts = [
 
 export default function FeaturedProducts() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-[hsl(var(--boutique-secondary))]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-12 text-[hsl(var(--boutique-primary))]">
           Featured Collection
