@@ -5,37 +5,37 @@ const categories = [
     id: 'short-kurtis',
     title: 'Short Kurtis',
     description: 'Casual elegance for everyday wear',
-    image: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti1.webp'
   },
   {
     id: 'long-kurtis',
     title: 'Long Kurtis',
     description: 'Grace and sophistication combined',
-    image: 'https://images.unsplash.com/photo-1583391733956-3c78bbaaa42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti2.png'
   },
   {
     id: 'suit-sets',
     title: 'Suit Sets',
     description: 'Traditional charm with modern flair',
-    image: 'https://images.unsplash.com/photo-1583391733981-24c6eacb2a44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti3.png'
   },
   {
     id: 'tops',
     title: 'Tops',
     description: 'Contemporary styles for modern women',
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti4.png'
   },
   {
     id: 'coord-sets',
     title: 'Co-ord Sets',
     description: 'Perfectly matched outfits',
-    image: 'https://images.unsplash.com/photo-1571513722275-4b8c78de4420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti5.png'
   },
   {
     id: 'gowns',
     title: 'Gowns',
     description: 'Glamorous evening wear',
-    image: 'https://images.unsplash.com/photo-1566479179817-41cb1775c9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=600'
+    image: '/kurti6.png'
   }
 ];
 
