@@ -1,57 +1,48 @@
 const featuredProducts = [
   {
     id: 1,
-    title: 'Designer Kurti',
-    description: 'Floral print with mirror work',
-    price: '₹2,499',
-    originalPrice: '₹3,999',
-    sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    image: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
-  },
-  {
-    id: 2,
-    title: 'Elegant Suit Set',
-    description: 'Traditional embroidery',
-    price: '₹3,299',
-    originalPrice: '₹4,999',
-    sizes: ['S', 'M', 'L', 'XL'],
-    image: 'https://images.unsplash.com/photo-1583391733981-24c6eacb2a44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
-  },
-  {
-    id: 3,
-    title: 'Co-ord Set',
-    description: 'Vibrant prints',
+    title: 'Blue Floral Print Kurti',
+    description: 'Beautiful blue kurti with intricate floral patterns',
     price: '₹1,999',
     originalPrice: '₹2,999',
     sizes: ['S', 'M', 'L', 'XL'],
-    image: 'https://images.unsplash.com/photo-1571513722275-4b8c78de4420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
+    image: '/kurti1.webp'
   },
   {
-    id: 4,
-    title: 'Evening Gown',
-    description: 'Glamorous evening wear',
-    price: '₹4,999',
-    originalPrice: '₹7,999',
-    sizes: ['S', 'M', 'L', 'XL'],
-    image: 'https://images.unsplash.com/photo-1566479179817-41cb1775c9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
-  },
-  {
-    id: 5,
-    title: 'Silk Kurti',
-    description: 'Premium silk fabric',
-    price: '₹3,599',
-    originalPrice: '₹5,499',
+    id: 2,
+    title: 'Black Embroidered Kurti',
+    description: 'Elegant black kurti with traditional white embroidery',
+    price: '₹2,499',
+    originalPrice: '₹3,499',
     sizes: ['S', 'M', 'L', 'XL', 'XXL'],
-    image: 'https://images.unsplash.com/photo-1583391733956-3c78bbaaa42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
+    image: '/kurti2.png'
   },
   {
-    id: 6,
-    title: 'Party Wear Top',
-    description: 'Sequined glamour',
+    id: 3,
+    title: 'Green White Work Kurti',
+    description: 'Light green kurti with delicate white embroidered work',
     price: '₹1,799',
     originalPrice: '₹2,499',
     sizes: ['S', 'M', 'L', 'XL'],
-    image: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500'
+    image: '/kurti3.png'
+  },
+  {
+    id: 4,
+    title: 'Pink Paisley Print Kurti',
+    description: 'Lovely pink kurti with paisley patterns',
+    price: '₹2,199',
+    originalPrice: '₹3,199',
+    sizes: ['S', 'M', 'L', 'XL'],
+    image: '/kurti4.png'
+  },
+  {
+    id: 5,
+    title: 'Cream Embroidered Kurti',
+    description: 'Sophisticated cream kurti with golden embroidery',
+    price: '₹2,299',
+    originalPrice: '₹3,299',
+    sizes: ['S', 'M', 'L', 'XL'],
+    image: '/kurti5.png'
   }
 ];
 
