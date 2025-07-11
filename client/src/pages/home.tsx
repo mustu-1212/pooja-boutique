@@ -12,7 +12,7 @@ import ProductGalleryModal from "@/components/product-gallery-modal";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[hsl(var(--boutique-light))]">
+    <div className="min-h-screen bg-[hsl(var(--boutique-primary))]">
       <Header />
       <Hero />
       <Categories />

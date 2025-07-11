@@ -15,12 +15,12 @@ export default function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 glass-effect">
+      <header className="sticky top-0 z-50 bg-white shadow-lg">
         <nav className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-3">
               <Gem className="text-[hsl(var(--boutique-primary))] text-2xl" />
-              <h1 className="text-2xl font-playfair font-bold text-[hsl(var(--boutique-primary))]">
+              <h1 className="text-2xl font-playfair font-bold text-black">
                 Pooja Boutique
               </h1>
             </div>
@@ -29,25 +29,25 @@ export default function Header() {
             <div className="hidden md:flex items-center space-x-8">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-[hsl(var(--boutique-dark))] hover:text-[hsl(var(--boutique-primary))] transition-colors"
+                className="text-black hover:text-[hsl(var(--boutique-primary))] transition-colors"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('categories')}
-                className="text-[hsl(var(--boutique-dark))] hover:text-[hsl(var(--boutique-primary))] transition-colors"
+                className="text-black hover:text-[hsl(var(--boutique-primary))] transition-colors"
               >
                 Categories
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-[hsl(var(--boutique-dark))] hover:text-[hsl(var(--boutique-primary))] transition-colors"
+                className="text-black hover:text-[hsl(var(--boutique-primary))] transition-colors"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-[hsl(var(--boutique-dark))] hover:text-[hsl(var(--boutique-primary))] transition-colors"
+                className="text-black hover:text-[hsl(var(--boutique-primary))] transition-colors"
               >
                 Contact
               </button>
@@ -64,7 +64,7 @@ export default function Header() {
             
             {/* Mobile Menu Button */}
             <button 
-              className="md:hidden text-[hsl(var(--boutique-primary))] text-2xl"
+              className="md:hidden text-black text-2xl"
               onClick={() => setMobileMenuOpen(true)}
             >
               <Menu />
