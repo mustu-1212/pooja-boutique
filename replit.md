@@ -136,3 +136,4 @@ Preferred communication style: Simple, everyday language.
 - **Pricing Information**: All products now include current prices, original prices, and available sizes
 - **WhatsApp Integration**: Enhanced WhatsApp ordering system with direct product links
 - **Frontend-Only Architecture**: Removed backend dependencies to make it fully Vercel-deployable
+- **Updated Color Scheme**: Changed from purple/white to warm yellowish tones for better visual appeal
