@@ -33,12 +33,16 @@ export default function About() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
+              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
               alt="Boutique Interior"
-              className="rounded-2xl shadow-lg w-full"
+              className="rounded-2xl shadow-lg w-full object-cover h-96"
             />
-            <div className="absolute -bottom-4 -right-4 bg-[hsl(var(--boutique-primary))] text-white rounded-full w-24 h-24 flex items-center justify-center font-playfair font-bold text-lg">
+            <div className="absolute -bottom-4 -right-4 bg-[hsl(var(--boutique-primary))] text-white rounded-full w-24 h-24 flex items-center justify-center font-playfair font-bold text-lg shadow-lg">
               10+ <br />Years
+            </div>
+            <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3">
+              <p className="text-sm font-semibold text-[hsl(var(--boutique-primary))]">Premium Quality</p>
+              <p className="text-xs text-gray-600">Handpicked Collection</p>
             </div>
           </div>
         </div>
