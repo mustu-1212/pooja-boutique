@@ -15,12 +15,12 @@ export const galleryData: Record<string, GalleryCategory> = {
   'short-kurtis': {
     title: 'Short Kurtis Collection',
     images: [
-      { src: 'https://images.unsplash.com/photo-1594736797933-d0401ba2fe65?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Floral Short Kurti', price: '₹1,999', originalPrice: '₹2,999', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: 'https://images.unsplash.com/photo-1583391733956-3c78bbaaa42b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Embroidered Short Kurti', price: '₹2,499', originalPrice: '₹3,499', sizes: ['S', 'M', 'L', 'XL', 'XXL'] },
-      { src: 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Casual Short Kurti', price: '₹1,799', originalPrice: '₹2,499', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: 'https://images.unsplash.com/photo-1571513722275-4b8c78de4420?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Designer Short Kurti', price: '₹2,799', originalPrice: '₹3,999', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: 'https://images.unsplash.com/photo-1566479179817-41cb1775c9b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Printed Short Kurti', price: '₹1,699', originalPrice: '₹2,299', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: 'https://images.unsplash.com/photo-1583391733981-24c6eacb2a44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=500', alt: 'Ethnic Short Kurti', price: '₹2,199', originalPrice: '₹3,199', sizes: ['S', 'M', 'L', 'XL', 'XXL'] }
+      { src: '@assets/IMG_0133_1752258783683.webp', alt: 'Blue Floral Print Kurti', price: '₹1,999', originalPrice: '₹2,999', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '@assets/image_1752258799884.png', alt: 'Black Embroidered Kurti', price: '₹2,499', originalPrice: '₹3,499', sizes: ['S', 'M', 'L', 'XL', 'XXL'] },
+      { src: '@assets/image_1752258815007.png', alt: 'Green White Work Kurti', price: '₹1,799', originalPrice: '₹2,499', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '@assets/image_1752258824521.png', alt: 'Pink Paisley Print Kurti', price: '₹2,199', originalPrice: '₹3,199', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '@assets/image_1752258846235.png', alt: 'Cream Embroidered Kurti', price: '₹2,299', originalPrice: '₹3,299', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '@assets/image_1752258861707.png', alt: 'Pink Designer Kurti', price: '₹2,799', originalPrice: '₹3,999', sizes: ['S', 'M', 'L', 'XL'] }
     ]
   },
   'long-kurtis': {
