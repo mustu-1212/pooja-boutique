@@ -15,12 +15,12 @@ export const galleryData: Record<string, GalleryCategory> = {
   'short-kurtis': {
     title: 'Short Kurtis Collection',
     images: [
-      { src: '@assets/IMG_0133_1752258783683.webp', alt: 'Blue Floral Print Kurti', price: '₹1,999', originalPrice: '₹2,999', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: '@assets/image_1752258799884.png', alt: 'Black Embroidered Kurti', price: '₹2,499', originalPrice: '₹3,499', sizes: ['S', 'M', 'L', 'XL', 'XXL'] },
-      { src: '@assets/image_1752258815007.png', alt: 'Green White Work Kurti', price: '₹1,799', originalPrice: '₹2,499', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: '@assets/image_1752258824521.png', alt: 'Pink Paisley Print Kurti', price: '₹2,199', originalPrice: '₹3,199', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: '@assets/image_1752258846235.png', alt: 'Cream Embroidered Kurti', price: '₹2,299', originalPrice: '₹3,299', sizes: ['S', 'M', 'L', 'XL'] },
-      { src: '@assets/image_1752258861707.png', alt: 'Pink Designer Kurti', price: '₹2,799', originalPrice: '₹3,999', sizes: ['S', 'M', 'L', 'XL'] }
+      { src: '/kurti1.webp', alt: 'Blue Floral Print Kurti', price: '₹1,999', originalPrice: '₹2,999', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '/kurti2.png', alt: 'Black Embroidered Kurti', price: '₹2,499', originalPrice: '₹3,499', sizes: ['S', 'M', 'L', 'XL', 'XXL'] },
+      { src: '/kurti3.png', alt: 'Green White Work Kurti', price: '₹1,799', originalPrice: '₹2,499', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '/kurti4.png', alt: 'Pink Paisley Print Kurti', price: '₹2,199', originalPrice: '₹3,199', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '/kurti5.png', alt: 'Cream Embroidered Kurti', price: '₹2,299', originalPrice: '₹3,299', sizes: ['S', 'M', 'L', 'XL'] },
+      { src: '/kurti6.png', alt: 'Pink Designer Kurti', price: '₹2,799', originalPrice: '₹3,999', sizes: ['S', 'M', 'L', 'XL'] }
     ]
   },
   'long-kurtis': {
