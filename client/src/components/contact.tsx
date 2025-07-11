@@ -199,13 +199,13 @@ export default function Contact() {
             {/* Available Products Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
               {availableProducts.map((product) => (
-                <div key={product.id} className="border rounded-lg p-4 hover:shadow-md transition-shadow">
+                <div key={product.id} className="border-2 border-[hsl(var(--boutique-primary))]/20 rounded-lg p-4 hover:shadow-md hover:border-[hsl(var(--boutique-primary))]/40 transition-all bg-white">
                   <img 
                     src={product.image} 
                     alt={product.title}
                     className="w-full h-40 object-cover rounded-lg mb-3"
                   />
-                  <h4 className="font-semibold text-sm mb-2">{product.title}</h4>
+                  <h4 className="font-semibold text-sm mb-2 text-[hsl(var(--boutique-dark))]">{product.title}</h4>
                   <div className="flex items-center justify-between mb-3">
                     <span className="text-[hsl(var(--boutique-primary))] font-bold">{product.price}</span>
                     <span className="text-gray-500 text-xs line-through">{product.originalPrice}</span>
@@ -227,7 +227,7 @@ export default function Contact() {
                 <h4 className="font-semibold mb-4 text-[hsl(var(--boutique-dark))]">Your Order ({selectedProducts.length} items)</h4>
                 <div className="space-y-3 mb-4">
                   {selectedProducts.map((item, index) => (
-                    <div key={`${item.product.id}-${item.selectedSize}`} className="flex items-center justify-between bg-gray-50 rounded-lg p-3">
+                    <div key={`${item.product.id}-${item.selectedSize}`} className="flex items-center justify-between bg-[hsl(var(--boutique-light-red))]/50 rounded-lg p-3 border border-[hsl(var(--boutique-primary))]/20">
                       <div className="flex items-center space-x-3">
                         <img 
                           src={item.product.image} 
@@ -235,15 +235,15 @@ export default function Contact() {
                           className="w-12 h-12 object-cover rounded"
                         />
                         <div>
-                          <p className="font-medium text-sm">{item.product.title}</p>
-                          <p className="text-xs text-gray-600">{item.product.price} each</p>
+                          <p className="font-medium text-sm text-[hsl(var(--boutique-dark))]">{item.product.title}</p>
+                          <p className="text-xs text-[hsl(var(--boutique-primary))]">{item.product.price} each</p>
                         </div>
                       </div>
                       <div className="flex items-center space-x-2">
                         <select
                           value={item.selectedSize}
                           onChange={(e) => updateSize(item.product.id, item.selectedSize, e.target.value)}
-                          className="border rounded px-2 py-1 text-xs"
+                          className="border border-[hsl(var(--boutique-primary))]/30 rounded px-2 py-1 text-xs bg-white"
                         >
                           {item.product.sizes.map(size => (
                             <option key={size} value={size}>{size}</option>
@@ -252,21 +252,21 @@ export default function Contact() {
                         <div className="flex items-center space-x-1">
                           <Button
                             onClick={() => updateQuantity(item.product.id, item.selectedSize, -1)}
-                            className="w-6 h-6 p-0 bg-gray-200 text-gray-700 hover:bg-gray-300"
+                            className="w-6 h-6 p-0 bg-[hsl(var(--boutique-light))] text-[hsl(var(--boutique-primary))] hover:bg-[hsl(var(--boutique-primary))]/10 border border-[hsl(var(--boutique-primary))]/30"
                           >
                             <Minus className="w-3 h-3" />
                           </Button>
-                          <span className="w-8 text-center text-sm">{item.quantity}</span>
+                          <span className="w-8 text-center text-sm text-[hsl(var(--boutique-dark))] font-medium">{item.quantity}</span>
                           <Button
                             onClick={() => updateQuantity(item.product.id, item.selectedSize, 1)}
-                            className="w-6 h-6 p-0 bg-gray-200 text-gray-700 hover:bg-gray-300"
+                            className="w-6 h-6 p-0 bg-[hsl(var(--boutique-light))] text-[hsl(var(--boutique-primary))] hover:bg-[hsl(var(--boutique-primary))]/10 border border-[hsl(var(--boutique-primary))]/30"
                           >
                             <Plus className="w-3 h-3" />
                           </Button>
                         </div>
                         <Button
                           onClick={() => removeProduct(item.product.id, item.selectedSize)}
-                          className="w-6 h-6 p-0 bg-red-500 text-white hover:bg-red-600"
+                          className="w-6 h-6 p-0 bg-[hsl(var(--boutique-primary))] text-white hover:bg-[hsl(var(--boutique-primary))]/80"
                         >
                           ×
                         </Button>
@@ -274,12 +274,12 @@ export default function Contact() {
                     </div>
                   ))}
                 </div>
-                <div className="border-t pt-3">
+                <div className="border-t border-[hsl(var(--boutique-primary))]/30 pt-3">
                   <div className="flex justify-between items-center text-lg font-bold">
-                    <span>Total: ₹{calculateTotal().toLocaleString()}</span>
+                    <span className="text-[hsl(var(--boutique-primary))] text-xl">Total: ₹{calculateTotal().toLocaleString()}</span>
                     <Button
                       onClick={() => setSelectedProducts([])}
-                      className="bg-gray-500 text-white hover:bg-gray-600 text-sm"
+                      className="bg-[hsl(var(--boutique-primary))]/10 text-[hsl(var(--boutique-primary))] hover:bg-[hsl(var(--boutique-primary))]/20 text-sm border border-[hsl(var(--boutique-primary))]/30"
                     >
                       Clear All
                     </Button>
@@ -402,11 +402,11 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Select products above to auto-generate your order message..."
-                  className="w-full bg-gray-50"
+                  className="w-full bg-[hsl(var(--boutique-light-red))]/30 border-[hsl(var(--boutique-primary))]/30"
                   rows={8}
                   required
                 />
-                <p className="text-xs text-gray-600 mt-1">
+                <p className="text-xs text-[hsl(var(--boutique-primary))] mt-1">
                   Message is automatically updated when you select products above. You can edit it if needed.
                 </p>
               </div>
