@@ -29,7 +29,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="py-16 bg-[hsl(var(--boutique-secondary))]">
+    <section className="py-16 bg-[hsl(var(--boutique-light-red))]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-12 text-[hsl(var(--boutique-primary))]">
           What Our Customers Say

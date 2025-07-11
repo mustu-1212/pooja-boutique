@@ -2,7 +2,7 @@ import { Truck, Award } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-16 bg-[hsl(var(--boutique-secondary))]">
+    <section id="about" className="py-16 bg-[hsl(var(--boutique-light-red))]">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

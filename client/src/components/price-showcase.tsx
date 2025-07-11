@@ -37,7 +37,7 @@ const priceRanges = [
 
 export default function PriceShowcase() {
   return (
-    <section className="py-16 bg-[hsl(var(--boutique-light))]">
+    <section className="py-16 bg-[hsl(var(--boutique-light-red))]">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-playfair font-bold text-center mb-4 text-[hsl(var(--boutique-primary))]">
           Our Pricing
