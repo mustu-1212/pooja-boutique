@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/image_1752295311637.png";
+import heroImage from "@assets/image_1752295421571.png";
 
 export default function Hero() {
   const scrollToCategories = () => {
@@ -71,11 +71,11 @@ export default function Hero() {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               {/* Hero Image */}
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-yellow-200/20 to-orange-300/20 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+              <div className="w-80 h-80 md:w-96 md:h-96 flex items-center justify-center">
                 <img 
                   src={heroImage}
                   alt="Elegant Indian Fashion Model"
-                  className="w-72 h-72 md:w-80 md:h-80 object-contain relative z-10 transform hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-contain relative z-10 transform hover:scale-105 transition-transform duration-300"
                 />
               </div>
               
