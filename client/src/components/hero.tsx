@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/image_1752295421571.png";
+import heroImage from "@assets/Q44-removebg-preview_1752295771542.png";
 
 export default function Hero() {
   const scrollToCategories = () => {
