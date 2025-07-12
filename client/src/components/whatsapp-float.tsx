@@ -1,6 +1,6 @@
 export default function WhatsAppFloat() {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/1234567890', '_blank');
+    window.open('https://wa.me/918319243373', '_blank');
   };
 
   return (

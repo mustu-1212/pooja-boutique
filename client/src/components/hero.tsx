@@ -42,7 +42,7 @@ export default function Hero() {
                 Explore Collection
               </Button>
               <Button 
-                onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+                onClick={() => window.open('https://wa.me/918319243373', '_blank')}
                 className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition-all transform hover:scale-105"
               >
                 Get Help

@@ -166,12 +166,25 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Create mailto link with the form data
+    const subject = `Order Inquiry from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:95poojamarkam@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open default email client
+    window.open(mailtoLink);
+    
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. We'll get back to you soon.",
+      title: "Email Client Opened!",
+      description: "Your default email app should open with the order details filled in.",
     });
-    setFormData({ name: '', email: '', message: '' });
-    setSelectedProducts([]);
+    
+    // Clear form after a short delay
+    setTimeout(() => {
+      setFormData({ name: '', email: '', message: '' });
+      setSelectedProducts([]);
+    }, 2000);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -300,21 +313,21 @@ export default function Contact() {
                 <MapPin className="text-[hsl(var(--boutique-primary))] text-xl" />
                 <div>
                   <p className="font-semibold text-[hsl(var(--boutique-dark))]">Address</p>
-                  <p className="text-gray-600">123 Fashion Street, Style City, SC 12345</p>
+                  <p className="text-gray-600">Fashion District, Mumbai, Maharashtra, India</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="text-[hsl(var(--boutique-primary))] text-xl" />
                 <div>
-                  <p className="font-semibold text-[hsl(var(--boutique-dark))]">Phone</p>
-                  <p className="text-gray-600">+1 (555) 123-4567</p>
+                  <p className="font-semibold text-[hsl(var(--boutique-dark))]">WhatsApp</p>
+                  <p className="text-gray-600">+91 8319243373</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="text-[hsl(var(--boutique-primary))] text-xl" />
                 <div>
                   <p className="font-semibold text-[hsl(var(--boutique-dark))]">Email</p>
-                  <p className="text-gray-600">info@poojaboutique.com</p>
+                  <a href="mailto:95poojamarkam@gmail.com" className="text-gray-600 hover:text-[hsl(var(--boutique-primary))] transition-colors">95poojamarkam@gmail.com</a>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -338,13 +351,15 @@ export default function Contact() {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a 
-                  href="#" 
+                  href="https://www.instagram.com/poojamarkam308?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-[hsl(var(--boutique-primary))] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"
                 >
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a 
-                  href="https://wa.me/1234567890" 
+                  href="https://wa.me/918319243373" 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[hsl(var(--boutique-whatsapp))] text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-opacity-80 transition-colors"

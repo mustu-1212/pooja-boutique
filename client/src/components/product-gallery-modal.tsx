@@ -99,7 +99,7 @@ export default function ProductGalleryModal() {
                   )}
                   
                   <button 
-                    onClick={() => window.open('https://wa.me/1234567890', '_blank')}
+                    onClick={() => window.open('https://wa.me/918319243373', '_blank')}
                     className="w-full bg-[hsl(var(--boutique-primary))] text-white py-2 px-4 rounded-lg hover:bg-[hsl(var(--boutique-primary))]/90 transition-colors font-medium text-sm"
                   >
                     Order Now

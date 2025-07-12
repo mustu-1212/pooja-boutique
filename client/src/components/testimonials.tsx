@@ -1,29 +1,33 @@
 import { Star } from "lucide-react";
 
+import testimonial1 from "@assets/images_1752294686165.jpg";
+import testimonial2 from "@assets/download_1752294731719.jpg";
+import testimonial3 from "@assets/download_1752294744738.jpg";
+
 const testimonials = [
   {
     id: 1,
     name: "Priya Sharma",
     location: "Mumbai",
     rating: 5,
-    comment: "Amazing collection! The quality is exceptional and the designs are so elegant. I've bought 3 kurtis and each one is perfect.",
-    image: "https://images.unsplash.com/photo-1494790108755-2616c7e4e5e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+    comment: "Amazing collection! The quality is exceptional and the designs are so elegant. I've bought 3 kurtis and each one is perfect. Pooja's boutique has become my go-to place for all ethnic wear.",
+    image: testimonial1
   },
   {
     id: 2,
     name: "Anita Patel",
     location: "Delhi",
     rating: 5,
-    comment: "The gowns are absolutely stunning! Wore one to a wedding and got so many compliments. Will definitely order again.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+    comment: "The gowns are absolutely stunning! Wore one to a wedding and got so many compliments. The fabric quality and stitching is top-notch. Will definitely order again.",
+    image: testimonial2
   },
   {
     id: 3,
     name: "Ritu Gupta",
     location: "Bangalore",
     rating: 5,
-    comment: "Fast delivery and excellent customer service. The suit set I ordered fits perfectly and the fabric is so comfortable.",
-    image: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=150&h=150"
+    comment: "Fast delivery and excellent customer service. The suit set I ordered fits perfectly and the fabric is so comfortable. Pooja personally ensures every detail is perfect.",
+    image: testimonial3
   }
 ];
 
@@ -39,19 +43,25 @@ export default function Testimonials() {
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.id}
-              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-[hsl(var(--boutique-primary))]"
             >
               <div className="flex items-center mb-4">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full object-cover mr-4"
-                />
+                <div className="relative">
+                  <img 
+                    src={testimonial.image} 
+                    alt={testimonial.name}
+                    className="w-16 h-16 rounded-full object-cover mr-4 border-2 border-[hsl(var(--boutique-primary))]/20"
+                  />
+                  <div className="absolute -bottom-1 -right-1 bg-[hsl(var(--boutique-primary))] text-white w-6 h-6 rounded-full flex items-center justify-center text-xs">
+                    ✓
+                  </div>
+                </div>
                 <div>
                   <h3 className="font-playfair font-semibold text-[hsl(var(--boutique-dark))]">
                     {testimonial.name}
                   </h3>
-                  <p className="text-sm text-gray-600">{testimonial.location}</p>
+                  <p className="text-sm text-gray-600 font-medium">{testimonial.location}</p>
+                  <p className="text-xs text-[hsl(var(--boutique-primary))] font-medium">Verified Customer</p>
                 </div>
               </div>
               
@@ -61,7 +71,9 @@ export default function Testimonials() {
                 ))}
               </div>
               
-              <p className="text-gray-700 italic">"{testimonial.comment}"</p>
+              <div className="bg-[hsl(var(--boutique-light-red))]/30 rounded-lg p-4 border-l-2 border-[hsl(var(--boutique-primary))]">
+                <p className="text-gray-700 italic text-sm leading-relaxed">"{testimonial.comment}"</p>
+              </div>
             </div>
           ))}
         </div>
