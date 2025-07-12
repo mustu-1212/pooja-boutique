@@ -372,7 +372,7 @@ export default function Contact() {
             </div>
           </div>
           
-          <div>
+          <div className="bg-white rounded-2xl p-8 shadow-lg">
             <h3 className="text-2xl font-playfair font-semibold mb-6 text-[hsl(var(--boutique-dark))]">
               Send Order Inquiry
             </h3>

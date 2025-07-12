@@ -1,4 +1,5 @@
 import { Truck, Award } from "lucide-react";
+import clothingRackImage from "@assets/image_1752295168761.png";
 
 export default function About() {
   return (
@@ -33,8 +34,8 @@ export default function About() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600"
-              alt="Boutique Interior"
+              src={clothingRackImage}
+              alt="Boutique Collection"
               className="rounded-2xl shadow-lg w-full object-cover h-96"
             />
             <div className="absolute -bottom-4 -right-4 bg-[hsl(var(--boutique-primary))] text-white rounded-full w-24 h-24 flex items-center justify-center font-playfair font-bold text-lg shadow-lg">
