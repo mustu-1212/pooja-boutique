@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import heroImage from "@assets/image_1752295311637.png";
 
 export default function Hero() {
   const scrollToCategories = () => {
@@ -66,77 +67,16 @@ export default function Hero() {
             </div>
           </div>
           
-          {/* Right side - Illustration */}
+          {/* Right side - Hero Image */}
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
-              {/* Circular background */}
-              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-yellow-200/20 to-orange-300/20 backdrop-blur-sm flex items-center justify-center">
-                {/* Indian woman illustration */}
-                <svg 
-                  width="280" 
-                  height="320" 
-                  viewBox="0 0 280 320" 
-                  className="relative z-10"
-                >
-                  {/* Background glow */}
-                  <defs>
-                    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
-                      <stop offset="0%" stopColor="#FEF3C7" stopOpacity="0.3"/>
-                      <stop offset="100%" stopColor="#F59E0B" stopOpacity="0"/>
-                    </radialGradient>
-                  </defs>
-                  
-                  {/* Hair */}
-                  <path d="M140 50 C120 45, 100 55, 95 75 C90 95, 95 115, 110 125 L110 140 L170 140 L170 125 C185 115, 190 95, 185 75 C180 55, 160 45, 140 50 Z" fill="#8B4513"/>
-                  
-                  {/* Face */}
-                  <ellipse cx="140" cy="110" rx="35" ry="40" fill="#DEB887"/>
-                  
-                  {/* Bindi */}
-                  <circle cx="140" cy="95" r="3" fill="#DC2626"/>
-                  
-                  {/* Eyes */}
-                  <ellipse cx="130" cy="105" rx="4" ry="3" fill="#000"/>
-                  <ellipse cx="150" cy="105" rx="4" ry="3" fill="#000"/>
-                  <circle cx="131" cy="104" r="1" fill="#FFF"/>
-                  <circle cx="151" cy="104" r="1" fill="#FFF"/>
-                  
-                  {/* Nose */}
-                  <path d="M140 115 L138 120 L142 120 Z" fill="#CD853F"/>
-                  
-                  {/* Mouth */}
-                  <path d="M135 125 Q140 128 145 125" stroke="#8B4513" strokeWidth="2" fill="none"/>
-                  
-                  {/* Earrings */}
-                  <circle cx="110" cy="115" r="6" fill="#FFD700"/>
-                  <circle cx="170" cy="115" r="6" fill="#FFD700"/>
-                  
-                  {/* Necklace */}
-                  <ellipse cx="140" cy="145" rx="25" ry="8" fill="#FFD700"/>
-                  <circle cx="140" cy="145" r="4" fill="#DC2626"/>
-                  
-                  {/* Kurti/Dress */}
-                  <path d="M115 140 L115 300 Q115 310, 125 310 L155 310 Q165 310, 165 300 L165 140 Z" fill="#FF6B35"/>
-                  
-                  {/* Decorative patterns on kurti */}
-                  <circle cx="125" cy="160" r="8" fill="#FFD700" opacity="0.8"/>
-                  <circle cx="140" cy="180" r="8" fill="#22C55E" opacity="0.8"/>
-                  <circle cx="155" cy="160" r="8" fill="#FFD700" opacity="0.8"/>
-                  <circle cx="125" cy="200" r="8" fill="#22C55E" opacity="0.8"/>
-                  <circle cx="155" cy="200" r="8" fill="#FFD700" opacity="0.8"/>
-                  <circle cx="140" cy="220" r="8" fill="#FFD700" opacity="0.8"/>
-                  
-                  {/* Arms */}
-                  <ellipse cx="105" cy="160" rx="12" ry="35" fill="#DEB887"/>
-                  <ellipse cx="175" cy="160" rx="12" ry="35" fill="#DEB887"/>
-                  
-                  {/* Dupatta/Scarf */}
-                  <path d="M95 150 Q140 130, 185 150 Q185 160, 175 165 Q140 145, 105 165 Q95 160, 95 150 Z" fill="#FEF3C7" opacity="0.9"/>
-                  
-                  {/* Bangles */}
-                  <ellipse cx="105" cy="190" rx="8" ry="4" fill="#FFD700"/>
-                  <ellipse cx="175" cy="190" rx="8" ry="4" fill="#FFD700"/>
-                </svg>
+              {/* Hero Image */}
+              <div className="w-80 h-80 md:w-96 md:h-96 rounded-full bg-gradient-to-br from-yellow-200/20 to-orange-300/20 backdrop-blur-sm flex items-center justify-center overflow-hidden">
+                <img 
+                  src={heroImage}
+                  alt="Elegant Indian Fashion Model"
+                  className="w-72 h-72 md:w-80 md:h-80 object-contain relative z-10 transform hover:scale-105 transition-transform duration-300"
+                />
               </div>
               
               {/* Floating decorative elements */}
